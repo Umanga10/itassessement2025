@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home - UA Kicks</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body bgcolor="#F2F0EF">
+    <header>
+        <marquee>Welcome to the official UA Kicks Store. </marquee>
+    </header>
+    <nav>
+        <div class="logo"><h1>UA KICKS</h1> <h5>'Always the Best' </h5></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faqs.html">Faqs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Mobile Toggle Button -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <div class="nav-icons">
+            <input type="text" placeholder="Search for Shoes">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-user"></i>
+        </div>
+    </nav>
+    <p class="new-txt">FLASH SALE!!!</p>
+    <section id="home">
+        <div class="shoe-container">
+            <div class="shoe-card">
+                <img src="shoe1.jpg" alt="Shoe 1">
+                <p class="price">Rs.5999</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="shoe-card">
+                <img src="shoe2.jpg" alt="Shoe 2">
+                <p class="price">Rs.6199</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="shoe-card">
+                <img src="shoe3.jpg" alt="Shoe 3">
+                <p class="price">Rs.5999</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 UA kicks. All rights reserved.</p>
+    </footer>
+    <script>
+        // Mobile Navbar Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
