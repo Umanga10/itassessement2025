@@ -158,6 +158,15 @@ footer {
     padding: 10px;
     margin-top: auto;
 }
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

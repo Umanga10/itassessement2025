@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - UA Kicks</title>
+    <link rel="stylesheet" href="faqs.css">
+    <script defer src="faqs.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+  
+    <nav>
+        <div class="logo"><a href="index.html"><img src ="logo.png" width="200" height="150"> </a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="faqs.html">FAQS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <!-- Mobile Toggle Button -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <div class="nav-icons">
+            <input type="text" placeholder="Search for Shoes">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-user"></i>
+        </div>
+    </nav>
+
+    <!-- FAQs Section -->
+    <section class="faqs-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3 class="faq-title">Where do we resell our shoes from? <span class="toggle">+</span></h3>
+            <p class="faq-content">We resell or shoes from <a href="https://www.superkicks.in/">SuperKicks, India</a></p>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">What locations do you ship to? <span class="toggle">+</span></h3>
+            <p class="faq-content">We offer worldwide shipping, ensuring our sneakers reach enthusiasts everywhere!</p>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">How long does delivery take? <span class="toggle">+</span></h3>
+            <p class="faq-content">Delivery within the whole Nepal take 3-5 days, while international shipping varies based on the location.</p>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">What is your return policy? <span class="toggle">+</span></h3>
+            <p class="faq-content">We accept returns within 30 days of purchase. Items must be unused and in original packaging for a full refund.</p>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">Do you offer discounts for bulk purchases? <span class="toggle">+</span></h3>
+            <p class="faq-content">Yes! We offer special discounts for bulk purchases. Contact us for more details on pricing for bulk orders.</p>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">How can I track my order? <span class="toggle">+</span></h3>
+            <p class="faq-content">Once your order has shipped, you will receive a tracking number via email. Use it to track your order status on our website.</p>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 UK Kicks. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a href="www.x.com"><img src="twitter.webp" alt="Twitter"></a>
+            <a href="www.instagram.com"><img src="instagram.avif" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navbar Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        // FAQ Toggle Script
+        const faqTitles = document.querySelectorAll('.faq-title');
+        faqTitles.forEach(title => {
+            title.addEventListener('click', () => {
+                const faqContent = title.nextElementSibling;
+                const toggle = title.querySelector('.toggle');
+                faqContent.classList.toggle('show');
+                toggle.textContent = faqContent.classList.contains('show') ? '-' : '+';
+            });
+        });
+    </script>
+
+</body>
+</html>
